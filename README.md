@@ -1,3 +1,4 @@
+# Open The Gates
 This PowerShell script automates the process of forwarding ports from the host machine to a Windows Subsystem for Linux (WSL) instance. It is useful for scenarios where you need to access services running inside WSL from the host or other network devices.
 
 ## Features
