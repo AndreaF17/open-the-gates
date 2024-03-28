@@ -30,27 +30,25 @@ Open Task Scheduler: Press `Win + R`, type taskschd.msc, and hit `Enter`.
 
 ### Create a New Task:
 
-In the Task Scheduler window, navigate to Action > Create Task.
-Provide a name and description for the task.
-Configure Triggers:
+1. In the Task Scheduler window, navigate to Action > Create Task.
+2. Provide a name and description for the task.
+#### Configure Triggers:
 
-Go to the Triggers tab and click New.
-Choose the trigger conditions for running the script. For example, you might want it to run at system startup or on a specific schedule.
-Set Action:
-
-Switch to the Actions tab and click New.
-Select Start a program as the action.
-Browse and select the PowerShell executable (powershell.exe).
-In the Add arguments field, enter the full path to the script (C:\path\to\forward_wsl_ports.ps1).
-Configure Conditions and Settings:
+1. Go to the Triggers tab and `click New`.
+2. Choose the trigger conditions for running the script. For example, you might want it to run at system startup or on a specific schedule.
+#### Set Action:
+1.Switch to the Actions tab and `click New`.
+2. Select Start a program as the action.
+3. Browse and select the PowerShell executable (`powershell.exe`).
+4. In the Add arguments field, enter the full path to the script `(C:\path\to\forward_wsl_ports.ps1`).
+#### Configure Conditions and Settings:
 
 Adjust any additional settings as needed, such as conditions and settings tabs.
 Save and Exit: Click OK to save the task.
 
 Now, the port forwarding script will run automatically according to the schedule you defined.
 
-# Note:
-
+## Note:
 Ensure that the user account running the scheduled task has sufficient privileges to execute PowerShell scripts and modify network settings.
 Test the scheduled task to verify that it runs as expected.
 
